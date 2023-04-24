@@ -25,7 +25,7 @@ jobs:
         with:
           to: 'scm.nayhlaingwin@gmail.com'
           subject: 'Notify'
-          body: [This user is commited.](${{ github.server_url }}/${{ github.actor }}).
+          body: "[This user is commited.](${{ github.server_url }}/${{ github.actor }})"
   git-url:
     runs-on: 
     steps:
