@@ -15,4 +15,5 @@ jobs:
   print_hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World!"
+      - name: Printing hello word
+      - run: echo "Welcome from Git Actions!!"
