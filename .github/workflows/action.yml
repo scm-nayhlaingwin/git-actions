@@ -25,10 +25,9 @@ jobs:
         with:
           to: 'scm.nayhlaingwin@gmail.com'
           subject: 'Notify'
-          # body: ${{ github.server_url }}/${{ github.actor }} This user is commited.
-          body: [This user is commited.](${{ github.server_url }}/${{ github.actor }})
+          body: [This user is commited.](${{ github.server_url }}/${{ github.actor }}).
   git-url:
-    runs-on: ubuntu-latest
+    runs-on: 
     steps:
       - name: git url
-        run: echo ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: echo [This user is commited.](${{ github.server_url }}/${{ github.actor }})
