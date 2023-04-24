@@ -25,4 +25,4 @@ jobs:
         with:
           to: 'scm.nayhlaingwin@gmail.com'
           subject: 'Notify'
-          body: ${{ github.actor }} This is a notification from GitHub actions.
+          body: ${{ github.actor }} ${{ secrets.GMAIL_ADDRESS }} This is a notification from GitHub actions.
