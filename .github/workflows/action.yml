@@ -1,0 +1,13 @@
+name: git-action-test
+
+on: 
+  push:
+    branches: [main]
+      # - main
+
+jobs:
+  print-hello:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Printing hello word
+    - run: echo "Welcome from Git Actions!!"
