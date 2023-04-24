@@ -26,3 +26,8 @@ jobs:
           to: 'scm.nayhlaingwin@gmail.com'
           subject: 'Notify'
           body: ${{ github.actor }} This is a notification from GitHub actions.
+  git-url:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git url
+        run: echo "$(git config --get remote.origin.url | sed -e 's/\.git$//g')/commit/$(git rev-parse HEAD)"
