@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
       # - main
+  pull_request:
+    branches: 
+      - main
 
 # jobs:
 #   print-hello:
@@ -15,5 +18,11 @@ jobs:
   print_hello:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "Starting GitHub Actions Job"
       - name: Printing hello word
         run: echo "Welcome from Git Actions!!"
+      - uses: cinotify/github-action@main
+        with:
+          to: 'scm.nayhlaingwin@gmail.com'
+          subject: 'Notify'
+          body: 'This is a notification from GitHub actions.'
