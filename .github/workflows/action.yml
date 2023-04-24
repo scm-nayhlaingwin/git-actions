@@ -25,7 +25,8 @@ jobs:
         with:
           to: 'scm.nayhlaingwin@gmail.com'
           subject: 'Notify'
-          body: ${{ github.server_url }}/${{ github.actor }} This is a notification from GitHub actions.
+          # body: ${{ github.server_url }}/${{ github.actor }} This user is commited.
+          body: <a href="${{ github.server_url }}/${{ github.actor }}"> This user is commited.</a>
   git-url:
     runs-on: ubuntu-latest
     steps:
