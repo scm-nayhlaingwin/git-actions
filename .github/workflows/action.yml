@@ -5,9 +5,14 @@ on:
     branches: [main]
       # - main
 
+# jobs:
+#   print-hello:
+#   runs-on: ubuntu-latest
+#   steps:
+#     - name: Printing hello word
+#     - run: echo "Welcome from Git Actions!!"
 jobs:
-  print-hello:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Printing hello word
-    - run: echo "Welcome from Git Actions!!"
+  print_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World!"
