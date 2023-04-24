@@ -2,7 +2,7 @@ name: Run commit lint on PR
 
 on:
   push: 
-    branches: [main]
+    branches: [main, feature/**]
 
 jobs:
   run-commit-lint-on-pr:
