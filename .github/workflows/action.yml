@@ -9,11 +9,11 @@ on:
 #   print-hello:
 #   runs-on: ubuntu-latest
 #   steps:
-#     - name: Printing hello word
 #     - run: echo "Welcome from Git Actions!!"
+
 jobs:
   print_hello:
     runs-on: ubuntu-latest
     steps:
       - name: Printing hello word
-      - run: echo "Welcome from Git Actions!!"
+        run: echo "Welcome from Git Actions!!"
